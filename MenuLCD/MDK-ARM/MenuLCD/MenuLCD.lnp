@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"menulcd\startup_stm32f407xx.o"
+"menulcd\main.o"
+"menulcd\stm32f4xx_it.o"
+"menulcd\stm32f4xx_hal_msp.o"
+"menulcd\stm32f4xx_hal_tim.o"
+"menulcd\stm32f4xx_hal_tim_ex.o"
+"menulcd\stm32f4xx_hal_rcc.o"
+"menulcd\stm32f4xx_hal_rcc_ex.o"
+"menulcd\stm32f4xx_hal_flash.o"
+"menulcd\stm32f4xx_hal_flash_ex.o"
+"menulcd\stm32f4xx_hal_flash_ramfunc.o"
+"menulcd\stm32f4xx_hal_gpio.o"
+"menulcd\stm32f4xx_hal_dma_ex.o"
+"menulcd\stm32f4xx_hal_dma.o"
+"menulcd\stm32f4xx_hal_pwr.o"
+"menulcd\stm32f4xx_hal_pwr_ex.o"
+"menulcd\stm32f4xx_hal_cortex.o"
+"menulcd\stm32f4xx_hal.o"
+"menulcd\stm32f4xx_hal_exti.o"
+"menulcd\system_stm32f4xx.o"
+"menulcd\alcd.o"
+--strict --scatter "MenuLCD\MenuLCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MenuLCD.map" -o MenuLCD\MenuLCD.axf
